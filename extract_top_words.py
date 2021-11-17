@@ -22,8 +22,9 @@ N = sys.argv[1]
 filename = sys.argv[2]
 print(f"Processing {filename}...")
 df = pd.read_csv(filename)
+# fill in missing values with an empty string
 df = df.fillna("")
-word_counts = pd.Series(" ".join(df["snippet"]).lower().split()).value_counts()[:100]
+# word_counts = pd.Series(" ".join(df["snippet"]).lower().split()).value_counts()[:100]
 word_counts = Counter(" ".join(df["snippet"]).lower().split()).most_common(50)
 print("Top ten 'words'")
 print(word_counts)
