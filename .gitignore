@@ -1,2 +1,3 @@
 # don't want our data in git. Too big. See drive folder
 *.csv
+.ipynb_checkpoints/
