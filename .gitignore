@@ -1,3 +1,5 @@
 # don't want our data in git. Too big. See drive folder
 *.csv
+*.npz
+*.pcl
 .ipynb_checkpoints/
